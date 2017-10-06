@@ -1,18 +1,18 @@
 #include <stdio.h>
 int main()
 {
-	int a,b,i,j;
-	scanf("%d",&a);
+	int a,b,i,sum;
+	scanf("%d", &a);
 	scanf("%d", &b);
+	sum=a;
 	for(i=1;i<=b;i++)
 	{
-		for(j=1;j<=a;j++)
+		printf("%d ", i);
+		if (i==sum)
 		{
-			printf("%d ", i);
-		    while(j==a)
-		    {
-		    	printf("\n");
-			}
+			printf("\n");
+			sum+=a;
 		}
 	}
+	printf("\n");
 }
